@@ -191,6 +191,9 @@ footer .social{
     grid-row: 5/8;
     box-shadow:5px 5px 10px #A3BBAD
 }
+.wireframe{
+    width: 100%;
+}
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
