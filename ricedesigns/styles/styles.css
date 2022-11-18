@@ -2,6 +2,7 @@
     margin: 0 auto;
     background-color: #07417B;
     width: 1900px;
+    font-family: tahoma, 'Times New Roman', Times, serif;
 }
 .logo{
     width: 180px;
@@ -42,7 +43,7 @@ header{
 }
 .button-box{
     background-color: #606060;
-    width: 145px;
+    width: 155px;
     height: 80px;
     grid-column: 1;
     grid-row: 2;
