@@ -36,7 +36,7 @@ header{
 #hero_box{
     width: 1600px;
     text-align: center;
-    grid-column: 0/6;
+    grid-column: 1/4;
 }
 #hero-img{
     width: 1900px;
@@ -45,7 +45,7 @@ header{
     background-color: #606060;
     width: 155px;
     height: 80px;
-    grid-column: 1;
+    grid-column: 2;
     grid-row: 2;
     border-radius: 25px;
     margin-top: 220px;
@@ -54,7 +54,6 @@ header{
 .book{
    font-size: 65px;
    color: white;
-   font-style: none;
    padding: 7px;
    text-decoration: none;
 }
