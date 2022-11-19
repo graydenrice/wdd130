@@ -74,12 +74,13 @@ h1{
 }
 .display{
     grid-column: 1/6;
+    grid-row: 2;
 }
 #cherry{
-    width: 300px;
     grid-column: 1;
     grid-row: 2;
     margin-right: 250px;
+    width: 300px;
     border: solid #424242 10px;
     border-radius: 25px;
     box-shadow: #000075 5px 5px 5px;
