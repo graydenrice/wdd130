@@ -5,7 +5,7 @@
     font-family: tahoma, 'Times New Roman', Times, serif;
 }
 .logo{
-    width: 180px;
+    width: 181px;
 }
 nav{
     display: flex;
@@ -16,12 +16,15 @@ nav a{
     font-size: 30px;
     color: white;
     text-decoration: none;
-    margin-top: -60px;
+    margin-top: -70px;
     
 }
 nav a:hover{
-    color: #000075;
+    background-color: #606060;
+    border-radius: 25px;
     text-decoration: underline;
+    padding: 5px;
+    margin-bottom: 15px;
 }
 header{
     background-color: #424242;
@@ -185,4 +188,49 @@ footer a:hover {
 footer p {
     font-size: 1.2em;
     color: white;
+}
+.title{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+}
+.store{
+    text-align: center;
+    grid-column: 2/5;
+    font-size: 100px;
+    margin-top: 25px;
+    padding-bottom: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.shop_msg{
+    grid-column: 2/5;
+    margin-top: -100px;
+    font-size: 30px;
+    background-color: #000075;
+    border-radius: 25px;
+    padding: 15px;
+    border: solid #606060 15px;
+    box-shadow: #000075 5px 5px 5px;
+    font-family: tahoma, 'Times New Roman', Times, serif;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    font-family: tahoma, 'Times New Roman', Times, serif;
+}
+.image{
+    grid-column: 1;
+    width: 300px;
+    border: solid #424242 10px;
+    border-radius: 25px;
+    margin: 25px;
+    margin-left: 200px;
+    box-shadow: #000075 5px 5px 5px;
+}
+.overlay{
+    border-radius: 25px;
+    margin: 25px;
+    margin-left: 200px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }

@@ -4,68 +4,133 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>Home</title>
+    <style>
+        * {box-sizing: border-box;}
+        
+        .container {
+          position: relative;
+          width: 50%;
+          max-width: 600px;
+        }
+        
+        .image{
+          display: block;
+          width: 100%;
+          height: auto;
+        }
+        
+        .overlay {
+          position: absolute; 
+          bottom: 0; 
+          background: rgb(0, 0, 0);
+          background: rgba(0, 0, 0, 0.5); /* Black see-through */
+          color: #f1f1f1; 
+          width: 310px;
+          transition: .5s ease;
+          opacity:0;
+          color: white;
+          font-size: 20px;
+          padding: 20px;
+          text-align: center;
+        }
+        
+        .container:hover .overlay {
+          opacity: 1;
+        }
+        </style>
 </head>
-<header>
-    <a id="logo_link" href="index.html">
-        <img src="images/logo.png" alt="RiceDesigns small logo">
-    </a>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="shop.html">Shop</a>
-        <a href="blog.html">Blog</a>
-    </nav>
-</header>
-
-<body>
-    <h1 class="store" >Welcome to our Shop</h1>
-    <p class="shop_msg">Here you will find a collection of some of our amazing designs! 
-        Check out our blog where we talk about the materials that go into each of our 
-        rings more in depth.  We are continuing to add more designs and new designs to 
-        our shop. Keep coming back to discover each of the new designs we are coming up 
-        with! If you dont see a design that speaks to you, you can email us at: 
-        ricedesigns@gmail.com and we will try to make a ring that speaks to you. Be 
-        sure to look at the home page at the featured section to see the newest rings 
-        we have to offer. I hope you are able to find what you are looking for here 
-        or as we update the site hopefully what you are looking for will appear here 
-        shortly.
-    </p>
-        <div class="gallery">
-            <img src="images/arctictreasure.jpg" alt="Arctic Treasure">
-            <p1>Arctic Treasure $75.00</p1>
-            <img src="images/botanical.jpg" alt="Botanical">
-            <p2>Botanical $75.00</p2>
-            <img src="images/cosmic.jpg" alt="Cosmic">
-            <p3>Cosmic $75.00</p3>
-            <img src="images/forge.jpg" alt="Forge">
-            <p4>Forge $75.00</p4>
-            <img src="images/golden-comet.jpg" alt="Golden Comet">
-            <p5>Golden Comet $75.00</p5>
-            <img src="images/hallowseve.jpg" alt="Hallows Eve">
-            <p6>Hallows Eve $75.00</p6>
-            <img src="images/ocean-treasure.jpg" alt="Ocean Treasure">
-            <p7>Ocean Treasure $75.00</p7>
-            <img src="images/lemon-lime.jpg" alt="Lemon Lime">
-            <p8>Lemon Lime $75.00</p8>
-            <img src="images/river-treasure.jpg" alt="River Treasure">
-            <p9>River Treasure $75.00</p9>
+<div id="content">
+    <header>
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="images/logo.png" alt="RiceDesigns small logo">
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="blog.html">Blog</a>
+        </nav>
+    </header>
+    
+    <div id="hero">
+        <div id="hero_box">
+            <img id="hero-img" src="images/rice_logo1.jpg" alt="Main logo">
         </div>
 
-</body>
-<footer>
-    <p>RiceDesigns &copy; 2022</p>
-    <p>Contact Us: ricedesigns01@gmail.com</p>
-    <a href="site-plan.html">Site-Plan</a>
-    
-    <div class="social">
-        <a href="https://facebook.com" target="_blank">
-            <img src="images/facebook.png" alt="fb icon">
+    </div>
+
+    <body>
+        <a class="title">
+            <h3 class="store" >Welcome to our Shop</h3>
+            <p class="shop_msg">Here you will find a collection of some of our amazing designs! 
+                Check out our blog where we talk about the materials that go into each of our 
+                rings more in depth.  We are continuing to add more designs and new designs to 
+                our shop. Keep coming back to discover each of the new designs we are coming up 
+                with! If you dont see a design that speaks to you, you can email us at: 
+                ricedesigns@gmail.com and we will try to make a ring that speaks to you. Be 
+                sure to look at the home page at the featured section to see the newest rings 
+                we have to offer. I hope you are able to find what you are looking for here 
+                or as we update the site hopefully what you are looking for will appear here 
+                shortly.
+            </p>
         </a>
-        <a href="https://twitter.com" target="_blank">
-            <img src="images/twitter.png" alt="twitter icon">
-        </a>
-        <a href="https://instagram.com" target="_blank">
-            <img src="images/instagram.png" alt="instagram icon">
-        </a>
-</footer>
+            <div class="gallery">
+                <div class="container">
+                    <img src="images/arctictreasure.jpg" alt="arctictreausre" class="image">
+                <div class="overlay">Arctic Treasure<br>$75.00</div>
+                </div>
+                <div class="container">
+                    <img src="images/botanical.jpg" alt="botanical" class="image">
+                <div class="overlay">Botanical<br>$75.00</div>
+                </div>
+                <div class="container">
+                    <img src="images/cosmic.jpg" alt="cosmic" class="image">
+                <div class="overlay">Cosmic<br>$75.00</div>
+                </div>
+                <div class="container">
+                    <img src="images/forge.jpg" alt="forge" class="image">
+                <div class="overlay">Forge<br>$75.00</div>
+                </div>
+                <div class="container">
+                    <img src="images/golden-comet.jpg" alt="golden comet" class="image">
+                <div class="overlay">Golden Comet<br>$75.00</div>
+                </div>
+                <div class="container">
+                    <img src="images/hallowseve.jpg" alt="hallowseve" class="image">
+                <div class="overlay">Hallows Eve<br>$75.00</div>
+                </div>
+                <div class="container">
+                    <img src="images/ocean-treasure.jpg" alt="ocean-treasure" class="image">
+                <div class="overlay">Ocean Treasure<br>$75.00</div>
+                </div>
+                <div class="container">
+                    <img src="images/lemon-lime.jpg" alt="Lemon Lime" class="image">
+                <div class="overlay">Lemon Lime<br>$75.00</div>
+                </div>
+                <div class="container">
+                    <img src="images/river-treasure.jpg" alt="river-treasure" class="image">
+                <div class="overlay">River Treasure<br>$75.00</div>
+                </div>
+            </div>
+
+    </body>
+
+    <footer>
+        <p>RiceDesigns &copy; 2022</p>
+        <p>Contact Us: ricedesigns01@gmail.com</p>
+        <a href="site-plan.html">Site-Plan</a>
+        
+        <div class="social">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="fb icon">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter.png" alt="twitter icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="instagram icon">
+            </a>
+    </footer>
+</div>
 </html>
